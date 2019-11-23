@@ -35,7 +35,7 @@ public class ChatActivity extends AppCompatActivity
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    String[] myDataset = {"안녕","오늘","뭐했어","영화볼래"};
+    String[] myDataset = {"안녕","오늘","뭐했어","영화볼래","살래"};
 
     EditText etText;
     Button btnSend;
