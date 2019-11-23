@@ -13,7 +13,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
     private String[] mDataset;
     List<Chat> mChat;
 
-    // Provide a reference to the views for each data item
+     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
 
@@ -33,7 +33,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
     {
         this.mChat = mChat;
     }
-    // Create new views (invoked by the layout manager)
+     // Create new views (invoked by the layout manager)
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {

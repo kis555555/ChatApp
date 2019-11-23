@@ -7,7 +7,7 @@ public class Chat
 
     public Chat()
     {
-        // Default constructor required for calls to DataSnapshot.getValue(Comment.class)
+         // Default constructor required for calls to DataSnapshot.getValue(Comment.class)
     }
 
     public Chat(String text)
