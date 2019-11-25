@@ -1,5 +1,6 @@
 package org.techtown.chatapp;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -95,6 +96,7 @@ public class ChatActivity extends AppCompatActivity
                     chat.put("email", email);
                     chat.put("text", stText);
                     myRef.setValue(chat);
+                    etText.setText("");
                 }
 
             }
@@ -108,7 +110,8 @@ public class ChatActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                finish();
+                Intent finish = new Intent(ChatActivity.this,MainActivity.class);
+                startActivity(finish);
             }
         });
 
@@ -127,7 +130,7 @@ public class ChatActivity extends AppCompatActivity
 
 
         // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(mChat);
+        mAdapter = new MyAdapter(mChat,email);
         mRecyclerView.setAdapter(mAdapter);
 
 
@@ -143,6 +146,7 @@ public class ChatActivity extends AppCompatActivity
                 // [START_EXCLUDE]
                 // Update RecyclerView
                 mChat.add(chat);
+                mRecyclerView.scrollToPosition(mChat.size()-1);
                 mAdapter.notifyItemInserted(mChat.size() - 1);
             }
 

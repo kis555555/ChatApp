@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity
 
         mAuth = FirebaseAuth.getInstance();
 
+        etEmail.setText("");
+        etPassword.setText("");
+
 
 
         btnRegister.setOnClickListener(new View.OnClickListener()

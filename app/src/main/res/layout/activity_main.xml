@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4646cd"
+    android:background="#0099ff"
     tools:context=".MainActivity">
 
 
@@ -38,6 +38,7 @@
         android:id = "@+id/etEmail"
         android:background="#ffffff"
         android:layout_below="@+id/tvHello"
+        android:drawableStart = "@drawable/ic_adb_black_24dp"
         />
 
         <EditText
@@ -50,6 +51,7 @@
             android:layout_marginTop="1dp"
             android:background="#ffffff"
             android:layout_below="@+id/tvHello"
+            android:drawableStart = "@drawable/ic_https_black_24dp"
             />
 
         <Button
